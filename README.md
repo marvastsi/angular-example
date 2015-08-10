@@ -1,2 +1,2 @@
-# mongo-example
-Simple project example with Angular
+# angular-example
+Simple project with Angular
