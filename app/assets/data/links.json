@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Projeto angular-example, v.1.0.0",
+    "links": [
+      {
+        "name": "Repositório do projeto",
+        "url": "https://github.com/marvastsi/angular-example.git"
+      }]
+  },
+  {
+    "title": "Dependências",
+    "links": [
+      {
+        "name": "AngularJS",
+        "url": "https://angularjs.org"
+      },
+      {
+        "name": "NodeJS",
+        "url": "https://nodejs.org"
+      },
+      {
+        "name": "Bower",
+        "url": "http://bower.io"
+      },
+      {
+        "name": "http-server",
+        "url": "https://www.npmjs.com/package/http-server"
+      },
+      {
+        "name": "Gulp",
+        "url": "http://gulpjs.com"
+      },
+      {
+        "name": "MongoDB",
+        "url": "https://www.mongodb.org/"
+      }]
+  }
+]

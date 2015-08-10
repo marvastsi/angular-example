@@ -1,0 +1,27 @@
+{
+  "name": "angular-example",
+  "version": "1.0.0",
+  "description": "Simple project with Angular",
+  "main": "gulpfile.js",
+  "author": "Marcelo F Vasconcelos",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "~2.0",
+    "http-server": "^0.6.1",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marvastsi/angular-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marvastsi/angular-example/issues"
+  },
+  "homepage": "https://github.com/marvastsi/angular-example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

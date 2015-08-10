@@ -1,0 +1,53 @@
+<div class="jumbotron">
+  <h2>CRUD example</h2>
+
+  <div class="col-md-12">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name"  class="form-control" ng-model="vc.employee.name" placeholder="Name"/>
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="vc.employee.active"> Active?
+      </label>
+    </div>
+    <br />
+    <button ng-class="['btn', {'btn-primary': vc.isEditing(), 'btn-success': !vc.isEditing()}]" ng-click="vc.add()">
+      <span ng-show="!vc.isEditing()">Save</span>
+      <span ng-show="vc.isEditing()">Update</span>
+    </button>
+    <button class="btn btn-warning" ng-click="vc.cancel()">Cancel</button>
+  </div>
+  <br />
+  <div class="clearfix"></div><hr />
+
+  <div class="container-fluid" role="main">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="col1">#</th>
+              <th class="col2">Name</th>
+              <th class="col3">Active</th>
+              <th class="col4"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="employee in vc.employees">
+              <td class="col1">{{employee.id}}</td>
+              <td class="col2">{{employee.name}}</td>
+              <td class="col3"><i ng-class="['glyphicon', {'glyphicon-ok':employee.active, 'glyphicon-remove':!employee.active}]"></i></td>
+              <td class="col4">
+                <button class="btn btn-warning" ng-click="vc.edit(employee)"><i class="glyphicon glyphicon-pencil"></i></button>
+                <button class="btn btn-danger" ng-click="vc.remove(employee)"><i class="glyphicon glyphicon-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

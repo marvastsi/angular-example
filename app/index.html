@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Angular</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/home">Simple AngularJS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#/home">Home</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Conteúdo <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/view">CRUD Simples</a></li>
+                <li><a href="#timer">DateTime Format</a></li>
+                <!-- <li><a href="pagina2.html">Página 2</a></li> -->
+              </ul>
+            </li>
+            <li><a href="#/about">Sobre</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" role="main" ng-view>
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app.js"></script>
+    <script src="config/router.js"></script>
+    <script src="components/home/home.router.js"></script>
+    <script src="components/about/about.router.js"></script>
+    <script src="components/about/about.controller.js"></script>
+    <script src="components/view/view.router.js"></script>
+    <script src="components/view/view.controller.js"></script>
+    <script src="components/timer/timer.router.js"></script>
+    <script src="components/timer/timer.controller.js"></script>
+    <script src="components/timer/timer.directive.js"></script>
+  </body>
+</html>

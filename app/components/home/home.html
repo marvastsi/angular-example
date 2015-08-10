@@ -1,0 +1,79 @@
+<div class="jumbotron">
+  <p class="text-center">
+    <img src="assets/images/angular.png" alt="AngularJS">
+  </p>
+  <h3>Projeto de exemplo usando AngularJS</h3>
+
+  <p>Projeto client-side simples, usando AngukarJS, nodeJS e bower.</p>
+
+  <p><strong>Configurações necessárias:</strong>:</p>
+  <pre>
+  $ sudo apt-get install nodejs
+  $ sudo apt-get install npm
+  $ sudo npm install -g bower
+
+  Configuração de variaveis de ambiente e caminho do nodejs
+  $ export BOWER_HOME=/usr/local/lib/node_modules/bower
+
+  $ export PATH=$PATH:$BOWER_HOME/bin
+  $ sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+  $ mkdir ~/myproject
+  $ cd myproject
+
+  Configuração do projeto (package.json)
+  $ npm init 
+  $ npm install
+  $ bower install
+   
+  ############################################
+
+  Exemplo do arquivo package.json:
+  {
+    "name": "myproject",
+    "version": "0.0.1",
+    "description": "My first project with Angular",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "MyName <xx@email.com>",
+    "license": "Apache 2.0",
+    "dependencies": {
+      "mongodb": "~2.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/myaccount/myproject.git"
+    },
+    "bugs": {
+      "url": "https://github.com/myaccount/myproject/issues"
+    },
+    "homepage": "https://github.com/myaccount/myproject"
+  }
+
+  Examplo do arquivo bower.json:
+  {
+    "name": "myproject",
+    "version": "0.0.1",
+    "authors": [
+      "MyName <xx@mail.com>"
+    ],
+    "license": "Apache 2.0",
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests"
+    ],
+    "dependencies": {
+      "angular": "~1.4.2",
+      "bootstrap": "~3.3.5",
+      "angular-route": "~1.4.2"
+    }
+  }
+</pre>
+  
+  <p><a href="https://angularjs.org/" target="blank">AngularJS</a></p>
+</div>

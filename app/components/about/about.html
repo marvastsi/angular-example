@@ -1,0 +1,16 @@
+
+<div class="jumbotron">
+  <h2>Sobre o projeto</h2><hr />
+  <ul id='data' class="list-unstyled">
+    <li ng-repeat="item in ac.data">
+      <div>
+        <h3>{{item.title}}</h3>
+        <ul id='links' class="list-unstyled">
+          <li ng-repeat="link in item.links">
+            <a href="{{link.url}}" target="blank" title="{{link.name}}">{{link.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
